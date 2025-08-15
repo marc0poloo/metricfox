@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { useState } from "react";
 import { Menu, X, Users, Briefcase, Building2 } from "lucide-react";
 
@@ -14,13 +13,12 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-                          <Image
+                          <img
                 src="/images/METRIC.png"
                 alt="MetricFox Logo"
                 width={120}
                 height={40}
-                priority
-                unoptimized
+                className="h-10 w-auto"
               />
           </Link>
 

@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook } from "lucide-react";
 
 export default function Footer() {
@@ -10,13 +9,12 @@ export default function Footer() {
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <Image
+              <img
                 src="/images/METRIC.png"
                 alt="MetricFox Logo"
                 width={120}
                 height={40}
-                priority
-                unoptimized
+                className="h-10 w-auto"
               />
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
