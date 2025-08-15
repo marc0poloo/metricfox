@@ -11,20 +11,6 @@ const nextConfig: NextConfig = {
   env: {
     CUSTOM_KEY: process.env.CUSTOM_KEY,
   },
-  async redirects() {
-    return [
-      {
-        source: "/candidates",
-        destination: "/kandidaten",
-        permanent: true,
-      },
-      {
-        source: "/companies", 
-        destination: "/unternehmen",
-        permanent: true,
-      },
-    ];
-  },
 };
 
 export default nextConfig;

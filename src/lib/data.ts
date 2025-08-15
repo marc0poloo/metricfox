@@ -47,7 +47,21 @@ export const mockJobs: Job[] = [
       industry: "Software Development",
       size: "51-200",
       founded: 2018,
-      description: "Innovative Software-Lösungen für moderne Unternehmen"
+      description: "Innovative Software-Lösungen für moderne Unternehmen",
+      website: "https://techflow.de",
+      locations: ["Berlin", "Hamburg"],
+      employees: 125,
+      benefits: [
+        "Flexible Arbeitszeiten",
+        "Home Office",
+        "Weiterbildungsbudget",
+        "Betriebliche Altersvorsorge"
+      ],
+      culture: "Wir fördern Innovation, Kreativität und Work-Life-Balance in einem dynamischen Umfeld.",
+      openPositions: 5,
+      isVerified: true,
+      createdAt: new Date("2023-01-15"),
+      updatedAt: new Date("2024-01-15")
     },
     description: "Wir suchen einen erfahrenen React Developer für unser dynamisches Team. Sie werden verantwortlich für die Entwicklung von Benutzeroberflächen-Komponenten sein.",
     requirements: [
@@ -95,7 +109,21 @@ export const mockJobs: Job[] = [
       industry: "Cloud Services",
       size: "201-500",
       founded: 2015,
-      description: "Führender Cloud-Infrastruktur Anbieter in Deutschland"
+      description: "Führender Cloud-Infrastruktur Anbieter in Deutschland",
+      website: "https://cloudtech-solutions.de",
+      locations: ["München", "Frankfurt"],
+      employees: 350,
+      benefits: [
+        "Betriebliche Altersvorsorge",
+        "Gesundheitsvorsorge",
+        "Teamevents",
+        "Moderne Büros"
+      ],
+      culture: "Expertise, Qualität und Kundenorientierung stehen bei uns im Mittelpunkt.",
+      openPositions: 8,
+      isVerified: true,
+      createdAt: new Date("2023-05-10"),
+      updatedAt: new Date("2024-01-20")
     },
     description: "Werden Sie Teil unseres Infrastructure-Teams und helfen Sie beim Aufbau skalierbarer Cloud-Lösungen.",
     requirements: [
@@ -143,7 +171,21 @@ export const mockJobs: Job[] = [
       industry: "E-Commerce",
       size: "11-50",
       founded: 2021,
-      description: "Innovative E-Commerce Platform für die Zukunft des Handels"
+      description: "Innovative E-Commerce Platform für die Zukunft des Handels",
+      website: "https://startupxyz.de",
+      locations: ["Hamburg"],
+      employees: 25,
+      benefits: [
+        "Equity Participation",
+        "Flexible Arbeitszeiten",
+        "Remote Work",
+        "Learning Budget"
+      ],
+      culture: "Startup-Mentalität mit flachen Hierarchien und schnellen Entscheidungen.",
+      openPositions: 3,
+      isVerified: true,
+      createdAt: new Date("2023-08-01"),
+      updatedAt: new Date("2024-01-25")
     },
     description: "Wir sind ein schnell wachsendes Startup auf der Suche nach einem vielseitigen Full-Stack Developer.",
     requirements: [

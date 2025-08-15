@@ -5,6 +5,18 @@
 [build.environment]
   NODE_VERSION = "18"
 
+# Legacy redirects
+[[redirects]]
+  from = "/candidates"
+  to = "/kandidaten/"
+  status = 301
+
+[[redirects]]
+  from = "/companies"
+  to = "/unternehmen/"
+  status = 301
+
+# SPA routing - serve the appropriate index.html for each route
 [[redirects]]
   from = "/kandidaten/*"
   to = "/kandidaten/index.html"
@@ -30,6 +42,7 @@
   to = "/kontakt/index.html"
   status = 200
 
+# Fallback for all other routes
 [[redirects]]
   from = "/*"
   to = "/index.html"
