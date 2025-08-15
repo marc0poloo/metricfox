@@ -23,7 +23,7 @@ export default function JobsPage() {
 
   const filteredJobs = mockJobs.filter(job => {
     const matchesSearch = job.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                         job.company.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                         job.company.toLowerCase().includes(searchTerm.toLowerCase()) ||
                          job.description.toLowerCase().includes(searchTerm.toLowerCase());
     const matchesCategory = !selectedCategory || job.category === selectedCategory;
     const matchesLocation = !selectedLocation || job.location === selectedLocation;
@@ -143,7 +143,7 @@ export default function JobsPage() {
                         <div className="flex items-center space-x-4 text-gray-300 mb-3">
                           <div className="flex items-center">
                             <Building2 className="mr-1" size={16} />
-                            {job.company.name}
+                            {job.company}
                           </div>
                           <div className="flex items-center">
                             <MapPin className="mr-1" size={16} />
