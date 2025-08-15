@@ -78,7 +78,7 @@ export const mockJobs: Job[] = [
       "Weiterbildungsbudget",
       "Moderne Hardware"
     ],
-    postedAt: new Date("2024-01-15"),
+    postedAt: "2024-01-15",
     applicationDeadline: new Date("2024-03-15"),
     isActive: true,
     featured: true,
@@ -126,7 +126,7 @@ export const mockJobs: Job[] = [
       "Teamevents",
       "Parkplatz"
     ],
-    postedAt: new Date("2024-01-20"),
+    postedAt: "2024-01-20",
     applicationDeadline: new Date("2024-03-20"),
     isActive: true,
     featured: false,
@@ -174,7 +174,7 @@ export const mockJobs: Job[] = [
       "Remote Work",
       "Learning Budget"
     ],
-    postedAt: new Date("2024-01-25"),
+    postedAt: "2024-01-25",
     applicationDeadline: new Date("2024-03-25"),
     isActive: true,
     featured: true,

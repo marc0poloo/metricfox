@@ -12,6 +12,7 @@ import {
   Euro
 } from "lucide-react";
 import { mockJobs, jobCategories, experienceLevels, jobTypes, locations } from "@/lib/data";
+import type { Job } from "@/types";
 import { formatCurrency, formatDate } from "@/lib/utils";
 
 export default function JobsPage() {
@@ -21,9 +22,9 @@ export default function JobsPage() {
   const [selectedExperience, setSelectedExperience] = useState("");
   const [selectedType, setSelectedType] = useState("");
 
-  const filteredJobs = mockJobs.filter(job => {
+  const filteredJobs = mockJobs.filter((job: Job) => {
     const matchesSearch = job.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                         job.company.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                         job.company.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
                          job.description.toLowerCase().includes(searchTerm.toLowerCase());
     const matchesCategory = !selectedCategory || job.category === selectedCategory;
     const matchesLocation = !selectedLocation || job.location === selectedLocation;
@@ -143,7 +144,7 @@ export default function JobsPage() {
                         <div className="flex items-center space-x-4 text-gray-300 mb-3">
                           <div className="flex items-center">
                             <Building2 className="mr-1" size={16} />
-                            {job.company}
+                            {job.company.name}
                           </div>
                           <div className="flex items-center">
                             <MapPin className="mr-1" size={16} />
@@ -181,7 +182,7 @@ export default function JobsPage() {
                     <div className="flex items-center justify-between">
                       <div className="flex items-center text-gray-400 text-sm">
                         <Calendar className="mr-1" size={14} />
-                        Veröffentlicht am {formatDate(job.postedAt)}
+                        Veröffentlicht am {formatDate(job.postedAt as Date | string)}
                       </div>
                       <div className="flex items-center">
                         <Star className="text-yellow-500 mr-1" size={16} />

@@ -15,12 +15,13 @@ export function formatCurrency(amount: number, currency: string = "EUR"): string
   }).format(amount);
 }
 
-export function formatDate(date: Date): string {
+export function formatDate(date: Date | string): string {
+  const dateObj = typeof date === 'string' ? new Date(date) : date;
   return new Intl.DateTimeFormat("de-DE", {
     year: "numeric",
     month: "long",
     day: "numeric"
-  }).format(date);
+  }).format(dateObj);
 }
 
 export function formatDateTime(date: Date): string {
