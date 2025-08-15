@@ -31,6 +31,8 @@ export interface JobOffer {
   createdAt: Date;
 }
 
+export type Job = JobOffer; // <- Richtig außerhalb exportieren!
+
 export interface TeamMember {
   id: string;
   name: string;
