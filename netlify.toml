@@ -1,0 +1,36 @@
+[build]
+  publish = "out"
+  command = "npm run build"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+[[redirects]]
+  from = "/kandidaten/*"
+  to = "/kandidaten/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/unternehmen/*"
+  to = "/unternehmen/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/jobs/*"
+  to = "/jobs/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/ueber-uns/*"
+  to = "/ueber-uns/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/kontakt/*"
+  to = "/kontakt/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
