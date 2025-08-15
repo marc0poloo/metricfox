@@ -16,7 +16,8 @@ export default function RootLayout({
   return (
     <html lang="de" data-oid="b1jifow" suppressHydrationWarning>
               <head>
-          <link rel="icon" href="/images/favicon.png"/>
+          <link rel="icon" href="/images/favicon.png" type="image/png" />
+          <link rel="apple-touch-icon" href="/images/favicon.png" />
         </head>
       <body className="antialiased min-h-screen flex flex-col" data-oid="hqec2:a">
         <Navigation data-oid="aoeky0o" />
